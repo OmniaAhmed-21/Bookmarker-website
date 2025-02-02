@@ -1,0 +1,156 @@
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-family:"Pacifico", cursive;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left:50% ;
+    transform: translateX(-50%);
+    position: relative;
+}
+h1::before{
+    content: "";
+    width:100% ;
+    height: 40%;
+    background-color: #FEC260;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: height 350ms;
+}
+h1:hover::before{
+    height: 60%;
+}
+.bookmark-section h2{
+    font-family:"Righteous", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left:50% ;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    
+}
+.bookmark-section .content{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+#submitBtn{
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #d1512d ;
+    border: 1px solid #d1512d;
+    color: white;
+    margin-left:50% ;
+    transform: translateX(-50%);
+    margin-top: 40px ;
+    margin-bottom: 40px ;
+}
+#submitBtn:hover{
+    background-color: #bb4120 ;
+    border: 1px solid #a03315;
+}
+tbody tr a{
+    color: white;
+
+}
+tbody tr td .btn-visit{
+    background-color: #8A9E23;
+    color: white;
+}
+tbody tr td .btn-visit:hover{
+    background-color: #9eb23b;
+    color: white;
+    border: 1px solid #6e8018;
+}
+tbody tr td .btn-delete{
+    background-color: #eb1d36;
+    color: white;
+}
+tbody tr td .btn-delete:hover{
+    background-color: #d30820;
+    color: white;
+    border: 1px solid #ba081d;
+}
+table tr,th,td {
+    padding: 10px 10px;
+    border-bottom: 1px solid #DEE2E6;
+    border-style: solid;
+    text-align: center; 
+}
+.light-container{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.light-container .box{
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.light-container .box .box-header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.light-container .box .box-header .circels {
+    height: 50px;
+    display: flex; 
+    gap: 10px; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.light-container .box .box-header .circels span{
+    width: 20px;
+    height: 20px ;
+}
+.light-container .box .box-header .circels .child-1{
+    background-color: #d1512d;
+}
+.light-container .box .box-header .circels .child-2{
+    background-color: #FEBE2E;
+}
+.light-container .box .box-header .circels .child-3{
+    background-color: #3ca55c;
+}
+.light-container .box p{
+    font-family:"Bree Serif", serif;
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.light-container .box li{
+    font-family:"PT Sans Caption", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+
+}
+.light-container .box li i{
+    color: #bb4120;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #E9BD76;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #FADEB4;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+    <section class="bookmark-section">
+        <div class="container">
+            <h1 class=" text-center my-5">Bookmarker</h1>
+            <div class="content">
+                <div>
+                    <h2 class="text-center my-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>
+                </div>
+                <div >
+                    <label class="pb-2" for="bookmarkName"> <i class="fa-solid fa-book-bookmark "></i> Site Name</label>
+                    <input  oninput=" advancedValidation(this)" type="text" class="form-control mb-4" id="bookmarkName" placeholder="">
+                </div>
+                <div >
+                    <label class="pb-2" for="bookmarkUrl"> <i class="fa-solid fa-link"></i> Site URL</label>
+                    <input  oninput="advancedValidation ( this)" type="url" class="form-control" id="bookmarkUrl" placeholder="">
+                </div>
+                <button class="btn px-5" id="submitBtn" onclick="addBookMark()">Submit</button>
+            </div>
+            <div> 
+                <table  width="100%" class=" bg-white my-5 ">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContent">
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="light-container d-none" id="lightContainer">
+                <div class="box">
+                    <header class=" container box-header">
+                        <div class="circels">
+                            <span class="rounded-circle me-2 child-1"></span>
+                            <span class="rounded-circle me-2 child-2" ></span>
+                            <span class="rounded-circle me-2 child-3"></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark close fs-3" id="close"></i>
+                        </div>
+                    </header>
+                    <p>Site Name or Url is not valid, Please follow the<br> rules below :</p>
+                    <ol class="list-unstyled">
+                        <li><i class="fa-regular fa-circle-right p-2"></i>Site name must contain at least 3 characters</li>
+                        <li><i class="fa-regular fa-circle-right p-2"></i>Site URL must be a valid one</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
